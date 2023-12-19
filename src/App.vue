@@ -1,26 +1,79 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!-- <template>
+  <div class="container-fluid">
+    <div class="row">
+      <Card>
+        <template #cardHeader> 
+          <p class="lead">Title 1</p>
+        </template>
+        <template #cardBody>
+          <div class="d-flex justify-content-between">
+            <img class="img-fluid w-50" src="https://picsum.photos/id/7/4728/3168.jpg" alt="image 1" loading="lazy">
+            <p class="lead">
+              Image description 1
+            </p>
+          </div>
+        </template>
+        <template #default>
+          <div class="d-flex justify-content-between">
+            <button class="btn btn-primary">View Detail</button>
+            <button class="btn btn-primary">Cart</button>
+          </div>
+        </template>
+      </Card>
+      <Card>
+        <template>
+          <p class="lead">Title 1</p>
+        </template>
+        <template >
+          <div class="d-flex justify-content-between">
+            <img class="img-fluid w-50" src="https://picsum.photos/id/7/4728/3168.jpg" alt="image 1" loading="lazy">
+            <p class="lead">
+              Image description 1
+            </p>
+          </div>
+        </template>
+        <template>
+          <div class="d-flex justify-content-between">
+            <button class="btn btn-primary">View Detail</button>
+            <button class="btn btn-primary">Cart</button>
+          </div>
+        </template>
+      </Card>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Card from './components/Card.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Card
+  }
+}
+</script> -->
+
+
+
+
+
+<template>
+  <div>
+    <Button>Hello</Button>
+    <Button>
+      <span>Click Me!</span>
+      <img src="./assets/logo.png" alt="Logo">
+    </Button>
+  </div>
+</template>
+
+<script>
+import Button from './components/Button.vue';
+
+export default {
+  components: {
+    Button
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
